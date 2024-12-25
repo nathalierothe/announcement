@@ -1,0 +1,23 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🎃 Nathalie's Spooky Birthday Bash! 🎃</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Spooky Birthday Announcement -->
+    <div id="birthday-announcement" class="announcement">
+        <div class="announcement-inner">
+            <h1>🎉 Boo! It's Nathalie's Birthday! 🎉</h1>
+            <p class="message">Join me for a spooky birthday bash filled with mystery, games, and eerie fun! 👻🎂</p>
+            <p class="hint">Wish me a happy haunting in chat! 🎃💀</p>
+        </div>
+    </div>
+
+    <!-- Link to JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>

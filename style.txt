@@ -1,0 +1,147 @@
+
+/* Basic reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #2e2b2b; /* Dark, spooky background */
+    color: #fff;
+    overflow: hidden;
+    position: relative;
+    animation: spookyPulse 5s infinite;
+}
+
+/* Spooky background pulse animation */
+@keyframes spookyPulse {
+    0% {
+        background-color: #333;
+    }
+    50% {
+        background-color: #660066; /* Purple for spooky effect */
+    }
+    100% {
+        background-color: #333;
+    }
+}
+
+.announcement {
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent dark background */
+    border-radius: 15px;
+    padding: 30px;
+    text-align: center;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.6);
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translateX(-50%);
+    max-width: 80%;
+    display: none; /* Hidden by default */
+    opacity: 0;
+    animation: slideIn 1s ease-out forwards; /* Slide-in animation */
+}
+
+@keyframes slideIn {
+    0% {
+        transform: translateX(-50%) translateY(-100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(-50%) translateY(0);
+        opacity: 1;
+    }
+}
+
+.announcement h1 {
+    font-size: 3rem;
+    color: #ffccff; /* Soft lavender/pink color for spooky effect */
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    animation: bounce 1.5s ease infinite;
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+}
+
+.message {
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #ff99cc; /* Soft pink for fun */
+    margin: 15px 0;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6);
+}
+
+.hint {
+    font-size: 1.1rem;
+    font-style: italic;
+    color: #ffcc66; /* Fun, quirky yellow for hints */
+}
+
+.announcement-inner {
+    animation: fadeIn 2s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/* Adding some cute spooky elements */
+body::before {
+    content: "🎃👻";
+    font-size: 2rem;
+    position: absolute;
+    top: 10%;
+    left: 20%;
+    animation: floatGhosts 4s infinite;
+}
+
+@keyframes floatGhosts {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+body::after {
+    content: "💀🍬";
+    font-size: 2rem;
+    position: absolute;
+    bottom: 10%;
+    right: 15%;
+    animation: floatCandy 4s infinite;
+}
+
+@keyframes floatCandy {
+    0% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(15px);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
